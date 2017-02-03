@@ -64,6 +64,10 @@ div.btn_block {
 	padding: 4px;
 }
 
+div.button {
+	cursor: pointer;
+}
+
 nav {
 	height: 75px;
 	width: 100%;
@@ -91,6 +95,21 @@ ul#nav > li {
 	overflow: hidden;
 	border-left: 1px solid #ccc;
 	vertical-align: middle;
+	font-size: 14px;
+}
+
+ul#nav > li:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+span {
+	letter-spacing: 3px;
+}
+
+ul#nav > li > img {
+	float: left;
+	margin-right: 5px;
 }
 
 ul#nav > li:first-child {
@@ -105,9 +124,8 @@ section {
 	padding: 0;
 	width: 77vw;
 	max-width: 750px;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 3px double #ccc;
 	border-bottom-width: 85%;
-	margin-bottom: 50px;
 }
 
 h1 {
@@ -185,12 +203,34 @@ strong {
 	font-weight: bold;
 }
 
-/*footer {
-	position: absolute;
-	bottom: 0;
+footer {
+	position: relative;
+	top: 120px;
 	display: block;
+	padding: 5px 0 50px 0;
+	width: 77vw;
+	margin: 0 auto;
 }
 
 #footer {
 	display: flex;
-}*/
+	clear: both;
+}
+
+li.footer_hi {
+	display: inline-block;
+	width: 14.5vw;
+	font-size: 13px;
+}
+
+li.footer_low {
+	padding-top: 15px;
+}
+
+div#footer_links {
+	margin-bottom: 50px;
+}
+
+a {
+	text-decoration: none;
+}
