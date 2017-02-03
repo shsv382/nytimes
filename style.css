@@ -3,3 +3,95 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+	padding: 12px;
+	
+	height: 55px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	background-image: url("images/nyt-logo.png");
+	background-repeat: no-repeat;
+	background-size: content;
+	background-position: center center;
+	z-index: 999;
+}
+
+div.button {
+	margin: 0 15px;
+	padding: 5px;
+	font-size: 14px;
+}
+
+div.left {
+	float: left;
+}
+
+div.right {
+	float: right;
+}
+
+div#sections {
+	box-shadow: 0 0 5px 2px #aaa;
+}
+
+div#login {
+	color: white;
+	background-color: #005599;
+	background-color: -webkit-linear-gradient(#228, #22c);
+	background-color:    -moz-linear-gradient(#228, #22c);
+	background-color:         linear-gradient(#228, #22c);
+	border: 1px solid #229999;
+}
+
+#logo-image {
+	visibility: hidden;
+}
+
+a#logo {
+	display: block;
+	width: 190px;
+	margin: 0 auto;
+}
+
+div.btn_block {
+	min-width: 100px;
+	padding: 4px;
+}
+
+nav {
+	height: 75px;
+	width: 100%;
+	position: relative;
+	top: 55px;
+	border-bottom: 1px solid #ccc;
+	box-shadow: 0 3px 15px 2px #ddd;
+	z-index: 10;
+	overflow: hidden;
+}
+
+ul#nav {
+	margin: auto;
+	padding: 5px 0;
+	width: 200%;
+}
+
+ul#nav > li {
+	display: inline-block;
+	width: 250px;
+	padding: 5px;
+	margin-right: 25px;
+	height: 64px;
+	overflow: hidden;
+	border-left: 1px solid #ccc;
+	vertical-align: middle;
+}
+
+ul#nav > li:first-child {
+	border-left: none;
+}
