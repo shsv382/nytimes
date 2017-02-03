@@ -42,11 +42,11 @@ div#sections {
 
 div#login {
 	color: white;
-	background-color: #005599;
+	background-color: #225599;
 	background-color: -webkit-linear-gradient(#228, #22c);
 	background-color:    -moz-linear-gradient(#228, #22c);
 	background-color:         linear-gradient(#228, #22c);
-	border: 1px solid #229999;
+	border-radius: 3px;
 }
 
 #logo-image {
@@ -67,12 +67,13 @@ div.btn_block {
 nav {
 	height: 75px;
 	width: 100%;
-	position: relative;
+	position: fixed;
 	top: 55px;
 	border-bottom: 1px solid #ccc;
-	box-shadow: 0 3px 15px 2px #ddd;
+	box-shadow: 0 3px 7px 2px rgba(80, 80, 80, 0.35);
 	z-index: 10;
 	overflow: hidden;
+	background-color: #fff;
 }
 
 ul#nav {
@@ -95,3 +96,101 @@ ul#nav > li {
 ul#nav > li:first-child {
 	border-left: none;
 }
+
+section {
+	display: block;
+	position: relative;
+	top: 150px;
+	margin: auto;
+	padding: 0;
+	width: 77vw;
+	max-width: 750px;
+	border-bottom: 1px solid #ccc;
+	border-bottom-width: 85%;
+	margin-bottom: 50px;
+}
+
+h1 {
+	font-style: italic;
+	font-size: 3vh;
+	font-weight: 300;
+	margin-top: 3vh;
+	padding-bottom: 1.5vh;
+	border-bottom: 1px solid #ccc;
+}
+
+h2 {
+	margin: 12px 0;
+	font-style: italic;
+}
+
+h3 {
+	font-weight: bold;
+}
+
+h5 {
+	font-size: 12px;
+	margin: 2vh 0;
+}
+
+h5.author {
+	float: left; 
+	margin-right: 20px;
+}
+
+figure.head > figcaption, figure.video > figcaption {
+	font-size: 12px;
+	color: #888;
+	padding: 8px 0;
+}
+
+article {
+	width: 85%;
+	margin: 30px auto;
+}
+
+p {
+	margin: 20px 0;
+	line-height: 30px;
+}
+
+@media screen and (min-width: 920px) {
+div.diagram {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0;
+	background-color: #fff;
+	position: relative;
+}
+}
+
+@media screen and (max-width: 919px) {
+div.diagram {
+	display: none;
+}
+}
+
+div.description {
+	position: absolute;
+	font-size: 14px;
+}
+
+/*div.description:first-child {
+	position: absolute;
+	left: 100px;
+	top: 18%;
+}*/
+
+strong {
+	font-weight: bold;
+}
+
+/*footer {
+	position: absolute;
+	bottom: 0;
+	display: block;
+}
+
+#footer {
+	display: flex;
+}*/
